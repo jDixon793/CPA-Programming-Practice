@@ -12,6 +12,7 @@ struct MEAL{
 };
 
 int main(void) {
+	cout<< sizeof(float *)<<endl<<sizeof(float)<<endl<<sizeof(double);
 	cout<< "wat"<<endl;
 	short int smoll;
 	long int chungus;
@@ -31,5 +32,12 @@ int main(void) {
 	cookie.cals = 1000;
 	cout<<iceCream.cals<<endl;
 	cout<<true<<endl;
+	int var =4;
+	cin>>var;
+	cout<<endl;
+	int array[var];
+	array[var-1]=4;
+	//array = new int[5];
+	cout <<array[var-1]<<endl;
 	return 0;
 }
