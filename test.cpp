@@ -32,11 +32,14 @@ int main(void) {
 	cookie.cals = 1000;
 	cout<<iceCream.cals<<endl;
 	cout<<true<<endl;
-	int var =4;
+	int var;
+	int var2;
 	cin>>var;
+	cin>>var2;
 	cout<<endl;
-	int array[var];
-	array[var-1]=4;
+	int *array = new int[var];
+	int *twod = new int[var][1];
+	array[4]=4;
 	//array = new int[5];
 	cout <<array[var-1]<<endl;
 	return 0;
