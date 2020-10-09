@@ -20,4 +20,17 @@ int main(void) {
 	//short cut operation works fine with concatenation.
 	name+= " is the best!";
 	cout <<name<<endl;
+	
+	string S = "ABC";
+	cout << S.compare(1,1,"BC")<<endl;		//returns -1
+	cout << S.compare(2,7777,S,2,345)<<endl; // returns 0 
+	
+	string z="Z",a="A";
+	cout<<int('A')<<" - " << int('Z')<< " = " << a.compare(z)<<endl;//-1
+	cout << int('Z')<<" - " << int('A')<< " = " <<z.compare(a)<<endl;//1
+	
+	string aString("James Dixon");
+	aString.resize(15);
+	cout<<aString<<'.'<<endl;
+	
 }
